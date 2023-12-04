@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{amssymb}
+\usepackage{venndiagram}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{amsthm}
+
+
+
+
+% Seitenränder einstellen
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Header definieren
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\lhead{Anton Jagow, Lukas Dzielski}
+\rhead{Ruprecht-Karls-Universität Heidelberg \\ MaFIn \\ Max-Emanuel Hlawatsch}
+\lfoot{}
+\rfoot{\thepage}
+
+\begin{document}
+
+\section*{Übungszettel \#4} % Setze die Nummer des Zettels
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        Aufgabe & Punkte \\
+        \hline
+        1 & \\
+        2 & \\
+        3 & \\
+        \hline
+        Gesamt & \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Aufgabe 1}
+    \begin{itemize}
+        \item [(a)] \(f_1(\{3, 4, 5, 6\}) = \{9, 16, 25, 36\}\)
+        \item [(b)] \(f_2(\{3, 4, 5, 6\}) = \{4, 9\}\)
+        \item [(c)] \(f_3(\{30, \cdots, 50\}) = \{6, 7\}\)
+        \item [(d)] \(f_4(\{30, \cdots, 50\}) = \{26, \cdots, 49\}\)
+        \item [(e)] \begin{itemize}
+            \item [(\(f_1\))] \textbf{injektiv}, da die Wertemenge schneller wächst als Definitionsmenge. Deswegen gibt es für jedes x aus der Wertemenge auf jeden fall nur ein y aus Definitionsmenge.\\ \textbf{Nicht surjektiv}, da es y gibt s.d. kein x zugeordnet ist. \(\Rightarrow y = 2 \) 
+            \item [(\(f_2\))] \textbf{Nicht injektiv}, man wähle \(x_1 = 2, x_2 = 3\) es gilt das \(x_1 \not = x_2\) aber \(f(2) = 4 = f(3)\) \\ \textbf{Nicht surjektiv}, da es y gibt s.d. kein x zugeordnet ist. \(\Rightarrow y = 2 \)
+            \item [(\(f_3\))] \textbf{injektiv} und \textbf{surjektiv} da die Funktion genau alle werte aus Q trifft. 
+            \item [(\(f_4\))] \textbf{Nicht injectiv}, man wähle \(x_1 = 2, x_2 = 3\) es gilt das \(x_1 \not = x_2\) aber \(f(2) = 4 = f(3)\) \\ \textbf{surjektiv} im gegensatz zu \((f_2)\) identisch aber die menge hat nur quadratzahlen also gibt es kein y was nicht einem x zugeordnet ist.
+        \end{itemize}
+    \end{itemize}
+
+\subsection*{Aufgabe 2}
+    \begin{itemize}
+        \item [(a)] \begin{itemize}
+            \item [(i)] \(A_0 = \{2\}\) \\ \(\Rightarrow q^{-1}(q(2)) = q^{-1}(4) = \{2, 3, 4\}\) \\ \(\{2\} \not = \{2, 3, 4\}\) \\
+            \item [(ii)] \(A'_0 = \{1\}\) \\ \(\Rightarrow q^{-1}(q(1)) = q^{-1}(1) = 1\) \\ \(\{1\} = \{1\}\) \\
+            \item [(iii)] \(B_0 = ?\) \\ \( \Rightarrow q(q^{-1}(B_0))\) \\
+            \item [(iv)] \(B'_0 = \{4\}\) \\ \(\Rightarrow q(q^{-1}(4)) = q(\{2, 3, 4\}) = 4\) \\
+
+        \end{itemize}
+        \item [(b)]
+    \end{itemize}
+    
+\subsection*{Aufgabe 3}
+
+\end{document}

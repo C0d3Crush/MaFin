@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{amssymb}
+\usepackage{venndiagram}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{amsthm}
+
+
+
+
+% Seitenränder einstellen
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Header definieren
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\lhead{Anton Jagow, Lukas Dzielski}
+\rhead{Ruprecht-Karls-Universität Heidelberg \\ MaFIn \\ Max-Emanuel Hlawatsch}
+\lfoot{}
+\rfoot{\thepage}
+
+\begin{document}
+
+\section*{Übungszettel \#3} % Setze die Nummer des Zettels
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        Aufgabe & Punkte \\
+        \hline
+        1 & \\
+        2 & \\
+        3 & \\
+        4 & \\
+        % Fügen Sie hier weitere Aufgaben hinzu
+        \hline
+        Gesamt & \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Aufgabe 1}
+    Die Relation R über A ist Reflexiv, Transitiv sowie Symetrisch dann ist diese nach definition eine Äquivalenzklasse. Wegen Symetrie gilt \( \forall x, y \in A \ xRy\) und \(yRx\). Wenn nun \(\forall x, y \in A \quad x = y\) gilt ist die Regel für Antisymetrie nicht verletzt. So kann eine soche Relation existieren. 
+
+\subsection*{Aufgabe 2}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+             & \(\leq_a\) & \(\leq_b\) & \(\leq_c\) & \(\leq_d\) \\
+            \hline
+            reflexiv & \(\checkmark\) & \(\checkmark\) & \(\checkmark\) & \(\checkmark\) \\
+            \hline
+            transitiv & \(\checkmark\) & \(\checkmark\) & \(\checkmark\) & \(\checkmark\) \\
+            \hline
+            antisymetrie & \(\checkmark\) & \(\checkmark\) & \(\times\) & \(\times\) \\
+            \hline
+            konnex & \(\checkmark\) & \(\times\) & \(\checkmark\) & \(\times\) \\
+            \hline
+             & Ordnung & partielle Ordnung & Präordnung & partielle Präordnung \\
+            \hline
+        \end{tabular}        
+    \end{center}
+    
+\subsection*{Aufgabe 3}
+\begin{itemize}
+    \item [(a)] \begin{proof}
+        Zu zeigen: Die Erreichbarkeitsrelation \(\curvearrowright\) ist sowohl transitiv als auch reflexiv.\\
+        \begin{itemize}
+            \item [reflexivität:] In der Aufgabestellung steht: "Nach Deﬁnition ist jeder Knoten von sich selbst aus erreichbar, \(v \curvearrowright v\) gilt für alle \(v\) in V "
+            \item [transitivität:] \(v_1, \cdots, v_t\) und \(v_t, \cdots, v_j\) sind zwei folgen von Kanten wobei die Paare \((v_i, v_i+1)\) im Graphen existieren. Da aber jetzt \(v_j\) aus \(v_1\) erreichbar ist da es für jeden übergang ein Paar gibt können wir auch schreiben: \(v_1, \cdots, v_j\). Also gilt: 
+            \[v_1 \curvearrowright v_t \wedge v_t \curvearrowright v_j \Leftrightarrow v_1 \curvearrowright v_j\] 
+        \end{itemize}
+    \end{proof}
+    \item [(b)] G ist in jedem Knoten aus zusammenhöngend. Zwei beliebige Knoten \(v\) und \(w\) aus V haben einen gerichteten Weg von v
+    \(v\) nach \(w\) und \(w\) nach \(v\)
+\end{itemize}
+
+\subsection*{Aufgabe 4}
+    \begin{itemize}
+        \item [(a)] \begin{proof}
+            Zu zeigen: Die Erreichbarkeitsrelation \(\curvearrowright\) ist eine Äquivalenzrelation auf der \\Knotenmenge V. \\Also muss sie reflexiv, transitiv und symetrisch sein. Es muss nur Symetrie gezeigt werden da Aufgabe 3 analog dazu ist.
+            \begin{itemize}
+                \item [symetrie:] Da ungerichtet, gilt \(v_i \curvearrowright v_{i+1}\) und \(v_{i+1} \curvearrowright v_{i}\)
+            \end{itemize}
+            \[\Rightarrow [v_i]_E = \{v_{i+1} \in V : v_i \curvearrowright v_{i+1} \wedge v_{i+1} \curvearrowright v_{i} \}\]
+        \end{proof}
+        \item[(b)] Es gibt zu je 2 beliebigen Knoten \(v\) und \(w\) in V einen ungerichteten Weg in G mit v als Startknoten und \(w\) als Endknoten.
+    \end{itemize}
+
+\end{document}

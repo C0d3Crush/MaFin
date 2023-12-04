@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{amssymb}
+\usepackage{venndiagram}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{amsthm}
+
+\usepackage{caption}
+
+
+
+
+
+% Seitenränder einstellen
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Header definieren
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\lhead{Anton Jagow, Lukas Dzielski}
+\rhead{Ruprecht-Karls-Universität Heidelberg \\ MaFIn \\ Max-Emanuel Hlawatsch}
+\lfoot{}
+\rfoot{\thepage}
+
+\begin{document}
+
+\section*{Übungszettel \#4} % Setze die Nummer des Zettels
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        Aufgabe & Punkte \\
+        \hline
+        1 & \\
+        2 & \\
+        3 & \\
+        \hline
+        Gesamt & \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Aufgabe 1}
+\paragraph*{(i)} Verknüpfungstabelle, addition, d = 6\\
+\begin{tabular}{c|ccccccc}
+    + & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+    \hline
+    0 & 0 & 1 & 2 & 3 & 4 & 5 & 0 \\
+    1 & 1 & 2 & 3 & 4 & 5 & 0 & 1 \\
+    2 & 2 & 3 & 4 & 5 & 0 & 1 & 2 \\
+    3 & 3 & 4 & 5 & 0 & 1 & 2 & 3 \\
+    4 & 4 & 5 & 0 & 1 & 2 & 3 & 4 \\
+    5 & 5 & 0 & 1 & 2 & 3 & 4 & 5 \\
+    6 & 0 & 1 & 2 & 3 & 4 & 5 & 0 \\
+\end{tabular}
+\paragraph*{(ii)} Verknüpfungstabelle, multiplikation, d = 6\\
+\begin{tabular}{c|ccccccc}
+    * & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+    \hline
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    1 & 0 & 1 & 2 & 3 & 4 & 5 & 0 \\
+    2 & 0 & 2 & 4 & 0 & 2 & 4 & 0 \\
+    3 & 0 & 3 & 0 & 3 & 0 & 3 & 0 \\
+    4 & 0 & 4 & 2 & 0 & 4 & 2 & 0 \\
+    5 & 0 & 5 & 4 & 3 & 2 & 1 & 0 \\
+    6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\end{tabular}
+\end{document}
