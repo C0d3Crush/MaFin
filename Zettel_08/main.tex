@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{amssymb}
+\usepackage{venndiagram}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{pdfpages}
+\usepackage{pifont}
+\usepackage{amsmath}
+\usepackage{amssymb}  
+
+\usepackage{caption}
+
+
+
+
+
+% Seitenränder einstellen
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Header definieren
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\lhead{Anton Jagow, Lukas Dzielski}
+\rhead{Ruprecht-Karls-Universität Heidelberg \\ MaFIn \\ Max-Emanuel Hlawatsch}
+\lfoot{}
+\rfoot{\thepage}
+
+\begin{document}
+
+\section*{Übungszettel \#8} % Setze die Nummer des Zettels
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        Aufgabe & Punkte \\
+        \hline
+        1 & \\
+        2 & \\
+        3 & \\
+        \hline
+        Gesamt & \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\section{Aufgabe}
+\subsection*{(a)}
+\subsection*{(b)} 
+Die Gleichung 
+\[o = a \cdot (1,2,3) + b\cdot (3,4,6), +c\cdot(0,4,6)\]
+ist mit \(a = -6, v = 2, c = 1\) Lösbar.
+\[o = (-6,-12,18) + (6,8,12) + (0,4,6)\]
+\[o = (0,0,0)\]
+\subsection*{(c)}
+\begin{itemize}
+    \item [(i)] \(\{0\}\) ist trivialer weise Linear unabhängig, da \(o = k \cdot o\)
+    \item [(ii)] \(\{o, (1,0,0)\}\) ist linear unabhängig, da \(o = k \cdot o + j \cdot (1,0,0)\) mit j = 0 das zeigt.
+    \item [(iii)] \(\{(1,0,0),(0,2,0), (0,0,3)\}\) ist linear Unabhängig, da \(o = a \cdot (1,0,0) + b \cdot (0,2,0) + c (0,0,3)\) es mehr als die triviale lösung gibt. 
+    \item [(iv)] \(\{(6, -2,0), (-3,1,0), (0,0,1)\}\) ist linear abhängig, mann kann (6, -2,0) mit (-2)*(-3,1,0) dargestellen.
+\end{itemize}
+\subsection*{(d)}
+Es ist zu zeigen das \(u = (2, 0, 0)\) und \(v = (0, 1, 0)\) zu einem Vektor \(w\) linear unabhängig sind. Dabei muss
+\[a \cdot u + b \cdot v = c \cdot w\]
+für werte anderes als der trivialen lösung erfüllt sein.
+\[ \Rightarrow a \cdot (2,0,0) + b \cdot (0,1,0) = c \cdot (w_1, w_2, 2_3)\]
+Ist lösbar mit den Koeficienten \(a = 1, b = 1, c = 1\) und \(w = (2, 1, 0)\)
+\[ \Rightarrow  (2,0,0) + (0,1,0) = (2, 1, 0)\]
+Nun soll gezeigt werden das es einen Vektor \(w'\) gibt der das Gleichungystem erfüllt.
+\[a_1 \cdot u + b_1 \cdot w' = c_1 \cdot v\]
+\[a_2 \cdot u + b_2 \cdot v = c_2 \cdot w'\]
+\[a_3 \cdot v + b_3 \cdot w' = c_3 \cdot u\]
+
+\(\Rightarrow w = (0, 1, 0)\)
+\[0 \cdot (2,0,0) + 1 \cdot (0,1,0) = 1 \cdot (0,1,0)\]
+\[0 \cdot (2,0,0) + 1 \cdot (0,1,0) = 1 \cdot (0, 1,0)\]
+\[1 \cdot (0,1,0) + 1 \cdot (0,1,0) = x \cdot (2,0,0) 
+\]
+Dabei kann man kein x finden um die gleichung zu lösen.
+
+\section{Aufgabe}
+\subsection*{Vektoraddition ist nicht abgeschlossen, }
+denn wenn \(u,v \in P \cup N\) kann es sein das \(u + v \in P \cup N\) nicht gilt. Man wähle \(u = (-1, -99, -99) \in P\) und \(v = (2, 0, 0) \in N\)
+aber 
+\[\Rightarrow (-1, -99, -99) + (2, 0, 0) = (1,-99, -99)\not \in P\cup N\]
+\subsection*{Vektormultiplikation ist abgeschlossen,}denn man wähle ein beliebigen \(v \in P \cup N\) dann kann \(v_1, v_2, v_3 \geq 0 \wedge v_1, v_2, v_3 \leq 0\) mit skalarer Multiplikation kann man nur alle vorzeichen zusammen ändern also ist dieses Kriterium erfüllt und das Produkt liegt auf jeden fall in \(P \wedge N\). Ausserdem ist das Produkt zwei realer Zahlen auch wieder Real. 
+
+\section{Aufgabe}
+\subsection*{(a)}
+Angenommen sie wäre linear abhängig also keine Basis. Es müsste möglich sein ein \(v_n\) zu finden das durch eine linearkombination zweier anderer dargestellt werden kann. Es gibt aber keinen Vektor der an der n'ten stelle eine nicht 0 hat. Daher ist die Menge linear unabhängig und somit eine Basis.
+
+%\subsection*{(b)}
+%Angenommen die Bais wäre endlich. Es müsste also einen letztes \(v_m\) geben. Man kann aber leicht überprüfen das es ein \(v_{m+1}\) gibt aus aufgabe (a). 
+
+\end{document}
