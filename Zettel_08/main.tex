@@ -53,6 +53,7 @@
 
 \section{Aufgabe}
 \subsection*{(a)}
+\((x,6y,15z) = 3 \cdot (1,0,0) + 3y \cdot(0,2,0) + 5z \cdot(0,0,3) \)
 \subsection*{(b)} 
 Die Gleichung 
 \[o = a \cdot (1,2,3) + b\cdot (3,4,6), +c\cdot(0,4,6)\]
@@ -61,8 +62,8 @@ ist mit \(a = -6, v = 2, c = 1\) Lösbar.
 \[o = (0,0,0)\]
 \subsection*{(c)}
 \begin{itemize}
-    \item [(i)] \(\{0\}\) ist trivialer weise Linear unabhängig, da \(o = k \cdot o\)
-    \item [(ii)] \(\{o, (1,0,0)\}\) ist linear unabhängig, da \(o = k \cdot o + j \cdot (1,0,0)\) mit j = 0 das zeigt.
+    \item [(i)] \(\{0\}\) ist trivialer weise linear abhängig, da \(o = k \cdot o\)
+    \item [(ii)] \(\{o, (1,0,0)\}\) ist linear abhängig, da \(o = k \cdot o + j \cdot (1,0,0)\) mit j = 0 das zeigt.
     \item [(iii)] \(\{(1,0,0),(0,2,0), (0,0,3)\}\) ist linear Unabhängig, da \(o = a \cdot (1,0,0) + b \cdot (0,2,0) + c (0,0,3)\) es mehr als die triviale lösung gibt. 
     \item [(iv)] \(\{(6, -2,0), (-3,1,0), (0,0,1)\}\) ist linear abhängig, mann kann (6, -2,0) mit (-2)*(-3,1,0) dargestellen.
 \end{itemize}
@@ -70,7 +71,7 @@ ist mit \(a = -6, v = 2, c = 1\) Lösbar.
 Es ist zu zeigen das \(u = (2, 0, 0)\) und \(v = (0, 1, 0)\) zu einem Vektor \(w\) linear unabhängig sind. Dabei muss
 \[a \cdot u + b \cdot v = c \cdot w\]
 für werte anderes als der trivialen lösung erfüllt sein.
-\[ \Rightarrow a \cdot (2,0,0) + b \cdot (0,1,0) = c \cdot (w_1, w_2, 2_3)\]
+\[ \Rightarrow a \cdot (2,0,0) + b \cdot (0,1,0) = c \cdot (w_1, w_Setze2, w_3)\]
 Ist lösbar mit den Koeficienten \(a = 1, b = 1, c = 1\) und \(w = (2, 1, 0)\)
 \[ \Rightarrow  (2,0,0) + (0,1,0) = (2, 1, 0)\]
 Nun soll gezeigt werden das es einen Vektor \(w'\) gibt der das Gleichungystem erfüllt.
@@ -90,12 +91,12 @@ Dabei kann man kein x finden um die gleichung zu lösen.
 denn wenn \(u,v \in P \cup N\) kann es sein das \(u + v \in P \cup N\) nicht gilt. Man wähle \(u = (-1, -99, -99) \in P\) und \(v = (2, 0, 0) \in N\)
 aber 
 \[\Rightarrow (-1, -99, -99) + (2, 0, 0) = (1,-99, -99)\not \in P\cup N\]
-\subsection*{Vektormultiplikation ist abgeschlossen,}denn man wähle ein beliebigen \(v \in P \cup N\) dann kann \(v_1, v_2, v_3 \geq 0 \wedge v_1, v_2, v_3 \leq 0\) mit skalarer Multiplikation kann man nur alle vorzeichen zusammen ändern also ist dieses Kriterium erfüllt und das Produkt liegt auf jeden fall in \(P \wedge N\). Ausserdem ist das Produkt zwei realer Zahlen auch wieder Real. 
+\subsection*{Vektormultiplikation ist abgeschlossen,}denn man wähle ein beliebigen \(v \in P \cup N\) dann kann \(v_1, v_2, v_3 \geq 0 \wedge v_1, v_2, v_3 \leq 0\) mit skalarer Multiplikation nur alle vorzeichen zusammen ändern also ist dieses Kriterium erfüllt und das Produkt liegt auf jeden fall in \(P \wedge N\). Ausserdem ist das Produkt zwei realer Zahlen auch wieder Real. 
 
 \section{Aufgabe}
 \subsection*{(a)}
-Angenommen sie wäre linear abhängig also keine Basis. Es müsste möglich sein ein \(v_n\) zu finden das durch eine linearkombination zweier anderer dargestellt werden kann. Es gibt aber keinen Vektor der an der n'ten stelle eine nicht 0 hat. Daher ist die Menge linear unabhängig und somit eine Basis.
-
+Angenommen sie wäre linear abhängig. Es müsste möglich sein ein \(v_n\) zu finden das durch eine linearkombination zweier anderer dargestellt werden könnte. Es gibt aber keinen Vektor der an der n'ten stelle eine nicht 0 hat. Daher ist die Menge linear unabhängig. 
+Durch Austauschsatz kann man sagen das eine Menge  
 %\subsection*{(b)}
 %Angenommen die Bais wäre endlich. Es müsste also einen letztes \(v_m\) geben. Man kann aber leicht überprüfen das es ein \(v_{m+1}\) gibt aus aufgabe (a). 
 

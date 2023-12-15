@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1702494274 "/Users/lukas/Documents/vscode_repo/23_24/MaFin/Zettel_08/main.tex" "main.pdf" "main" 1702494276 0
-  "/Users/lukas/Documents/vscode_repo/23_24/MaFin/Zettel_08/main.tex" 1702494273 3949 2b128c30ddf8f989532db47223ddcea0 ""
+["pdflatex"] 1702659482 "/Users/lukas/Documents/vscode_repo/23_24/MaFin/Zettel_08/main.tex" "main.pdf" "main" 1702659484 0
+  "/Users/lukas/Documents/vscode_repo/23_24/MaFin/Zettel_08/main.tex" 1702659482 4028 3f6f0be3e1a5bbbfea8a1c83b9c0ed35 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -150,8 +150,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683725111 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683725019 7883454 15dafec1fc7f71b6d440a197086c42ad ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1702494276 317 1352c36b2002d3fc1fc528759411a8d5 "pdflatex"
-  "main.tex" 1702494273 3949 2b128c30ddf8f989532db47223ddcea0 ""
+  "main.aux" 1702659484 317 1352c36b2002d3fc1fc528759411a8d5 "pdflatex"
+  "main.tex" 1702659482 4028 3f6f0be3e1a5bbbfea8a1c83b9c0ed35 ""
   (generated)
   "main.aux"
   "main.log"
